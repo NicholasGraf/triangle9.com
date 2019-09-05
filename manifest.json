@@ -1,11 +1,11 @@
 {
-  "name": "1stQuad Mobile Enterprise Application",
-  "short_name": "1stQuad MEA",
+  "name": "Triangle 9 Website",
+  "short_name": "Trianlge9",
   "theme_color": "#777777",
   "background_color": "#ffffff",
   "display": "standalone",
   "landscape": "portrait",
-  "Scope": "/dev/fqNews/",
+  "Scope": "/",
   "start_url": "index.html",
   "icons": [
     {
