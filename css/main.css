@@ -1,0 +1,205 @@
+/* Core Styles
+// Author: Nicholas Graf
+// v1
+*/
+
+/* Semantice Reset */
+.ui.form .field,
+.ui.form .fields,
+.ui.grid {
+  margin: 0;
+}
+
+.ui.form .fields > .field {
+  padding: 0;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.field input::-moz-placeholder,
+.field input::-ms-input-placeholder,
+.field input::-webkit-input-placeholder,
+.field input::placeholder {
+  font-style: italic;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.pushable > .pusher:after {
+  background: transparent
+}
+
+/* Core */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #777;
+  border: 0 none #ffffff;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+  border: 0 none #ffffff;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track:active,
+::-webkit-scrollbar-track:hover {
+  background: #eee;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+a,
+a:visited {
+  color: #777;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: #3ddad7;
+}
+
+
+/* APP */
+
+.app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+
+}
+
+.triangle {
+  margin: calc(50vh - 50px) auto;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  transition: all 3s ease-out;
+  transform: scale(1);
+
+}
+
+.triangle .tri {
+  width: 100%;
+  height: 100%;
+}
+
+.tri-poly {
+  fill: #121212;
+}
+
+
+/* Settings */
+
+.ui.sidebar {
+  box-shadow: 0;
+}
+
+
+.notification-container {
+  display: none;
+}
+
+.notification-options-off {
+  user-select: none;
+  pointer-events: none;
+  opacity: .3;
+}
+
+
+/* jQuery Datepicker */
+
+.ui-datepicker {
+  width: calc(100% - 10px);
+  color: #777;
+}
+
+.ui-widget.ui-widget-content {
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.ui-widget-header.ui-datepicker-header {
+  background: transparent;
+  border: 0;
+  color: #777;
+}
+
+.ui-datepicker-header * {
+  line-height: 40px;
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+  top: 0;
+  display: block;
+  width: 40px;
+  height: 100%;
+}
+
+.ui-button,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+html .ui-button.ui-state-disabled:active,
+html .ui-button.ui-state-disabled:hover {
+  background: #eee;
+  border: 0;
+  padding: 10px 5px;
+}
+
+.ui-button.ui-state-active:hover,
+.ui-button:active,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active {
+  background: #777;
+}
+
+.ui-datepicker td a,
+.ui-datepicker td span {
+  text-align: center;
+}

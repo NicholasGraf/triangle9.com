@@ -1,0 +1,11 @@
+{
+  "name": "triangle9.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicholas Graf",
+  "license": "ISC"
+}
